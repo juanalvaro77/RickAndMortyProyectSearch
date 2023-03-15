@@ -1,0 +1,91 @@
+.App {
+  text-align: center;
+  padding: 30px;
+  min-height: 100vh;
+  display: grid;
+  align-items: center;
+  background-image: url(/public/BGpage.png);
+}
+
+.citizen-card {
+  margin-top: 30px;
+  margin-left:510px;
+  border: 1px solid #8EFF8B;
+  width: 277px;
+  height: 385px;
+  color: #FBFBFB;
+  background-color: rgba(0,0,0,0.3);
+  
+  
+}
+.search {
+  width: 201px;
+  margin-left: 540px;
+  
+  }
+
+.status {
+  border: 2px solid #8eff8b;
+  width: 108px;
+  height: 42px;
+  text-align:center;
+  background-color: rgba(1,10,2,0.8);
+  margin-left: 75px;
+  margin-top: -50px;
+  padding-top: 10px;
+  position: absolute;
+}
+.input-search {
+  height: 27px;
+  width: 100px;
+  padding: 0;
+  margin: 0;
+  
+}
+.world {
+  width: 1025px;
+  margin-left: 150px;
+  display:flex;
+  flex-direction: row;
+  background-color: black;
+  border:1px solid #8EFF8B;
+  border-radius: 10px;
+  direction: initial;
+  color: #FBFBFB;
+  margin-top: 20px;
+}
+.citizen-img {
+  height: 202px;
+  width: 275px;
+  border: 1px solid #8EFF8B;
+
+  /*height: 402px;
+  width: 435px;
+  border: 1px solid #8EFF8B;*/
+
+}
+
+
+.button-search {
+  padding: 0;
+  margin-left: 10px;
+  color: #FBFBFB;
+  background-color: rgba(142,255,139,0.5);
+  width: 80px;
+  height: 27px;
+  font-size: 20px;
+  font-family: Fira Code;
+
+}
+
+.wrapper {
+  display:flex;
+  flex-direction: row; 
+}
+
+.citizen-card-info-down{
+  text-align: left;
+  padding-top: 10px;
+  padding-left: 15px;
+  font-size: 12px;
+}
