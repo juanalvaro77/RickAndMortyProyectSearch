@@ -15,21 +15,25 @@ function App() {
   const [idWorld, setIdWorld] = useState("");
   const [worldData,setWorldData] = useState("")
   
+  const captureWorld = (event) => {
+    setIdWorld(event.target.value );
+    
+  } 
+
   const searchWorld = () => {
     setWorldId(idWorld);
    }
  
-   const captureWorld = (event) => {
-    setIdWorld(event.target.value );
-  } 
   useEffect (()=>{
   
-    axios
+  axios
       .get(`https://rickandmortyapi.com/api/location/${worldId}`)
       .then((resp)=>setWorldData(resp.data))
       .catch((error)=>console.log("errorApp"));
 
   },[worldId])
+///////////////////////////
+
   
   
   return (
@@ -38,20 +42,20 @@ function App() {
           <img src="/logo.svg" alt="" width="550"/>
         </div>
         <div className="search">
-            <input  className='input-search' value={idWorld} placeholder="World id" onChange={captureWorld}/>
+            <input className='input-search' value={idWorld} placeholder="World id" onChange={captureWorld}/>
             <input className='button-search' type="button" value="Search" onClick={searchWorld}/>
         </div>
         <Locations data = {worldData} />
-        <div className='wrapper'>
+        <div className="citizen-container">
+
           <ul>
             {
-              worldData?.residents?.map((citizens)=>(<Citizen key="citizens.id" dataCz={citizens}/>))
+              worldData?.residents?.map((x)=>(<Citizen key="citizens.id" dataCz={x}/>))
             }
           </ul>
         </div>         
     </div>
   )
 }
-
 export default App
-  
+ 

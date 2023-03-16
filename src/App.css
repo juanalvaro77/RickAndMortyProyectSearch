@@ -1,9 +1,6 @@
 .App {
   text-align: center;
-  padding: 30px;
   min-height: 100vh;
-  display: grid;
-  align-items: center;
   background-image: url(/public/BGpage.png);
 }
 
@@ -56,15 +53,10 @@
 }
 .citizen-img {
   height: 202px;
-  width: 275px;
+  width: 100%;
   border: 1px solid #8EFF8B;
 
-  /*height: 402px;
-  width: 435px;
-  border: 1px solid #8EFF8B;*/
-
 }
-
 
 .button-search {
   padding: 0;
@@ -77,15 +69,13 @@
   font-family: Fira Code;
 
 }
-
-.wrapper {
-  display:flex;
-  flex-direction: row; 
-}
-
 .citizen-card-info-down{
   text-align: left;
   padding-top: 10px;
   padding-left: 15px;
-  font-size: 12px;
+  font-size: 11px;
+}
+.citizen-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
