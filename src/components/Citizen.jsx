@@ -10,7 +10,7 @@ const Citizen = ({dataCz}) => {
             .catch((error)=>console.log("errorCiti"));
     },[dataCz])
     return (
-           
+    <div className='citizen-container'>   
         <div className="citizen-card">
             <li key={citizens.id} >
                 <div className='citizen-card-head'>
@@ -29,6 +29,7 @@ const Citizen = ({dataCz}) => {
                     </div>
                 </div>
             </li>
+        </div>
         </div>
     );
 }; export default Citizen;

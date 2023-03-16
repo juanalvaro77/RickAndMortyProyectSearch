@@ -47,7 +47,6 @@ function App() {
         </div>
         <Locations data = {worldData} />
         <div className="citizen-container">
-
           <ul>
             {
               worldData?.residents?.map((x)=>(<Citizen key="citizens.id" dataCz={x}/>))
